@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        ul {
+            list-style: circle; /*none | circle | disc (default) | */
+        }
+
+        .links {
+
+        }
+
+        /* herencia */
+        .links li a {
+            color:green;
+        }
+
+        .texto-color {
+            color:blue;
+        }
+
+        #texto-color {
+            color:purple;
+        }
+
+        .texto-color-important {
+            color:aqua !important;
+        }
+
+        /*
+            important > inline > id > class
+        */
+
+        /*selector de atributos*/
+        [href] {
+            /* background-color: blueviolet;     */
+            text-decoration: line-through;
+        }
+
+        [href$="3"] {
+            text-decoration: underline;
+        }
+
+        /*igual a */
+        [id="galeria"] {
+            background-color: red;
+        }
+        /*inicie con algo*/
+        [id^="re"] {
+            background-color: burlywood;
+        }
+        /*contega*/
+        [id*="ale"]{
+            font-size: 8px;
+            color:blue;
+            padding: 15px;
+        }
+        /*termine con*/
+        [id$="s"] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a href="#nosotros">Link1</a>
+                        </li>
+                         <li>
+                            <a href="link2">Link2</a>
+                        </li>
+                        <li>
+                            <a href="link3">Link3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section>
+            <p style="color: red" 
+                class="texto-color texto-color-important" 
+                id="#texto-color"
+            >
+                    Parrafo
+            </p>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Oficiales</legend>
+                <form method="POST">
+                    <input type="file" name="archivo">
+                    <button>
+                        Enviar
+                    </button>
+                </form>
+            </fieldset>
+        </section>
+
+        <section id="nosotros">
+            <h3>Nostros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+        </section>
+
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+        </section>
+
+        <section id="galeria">
+            <h3>Galer&iacute;a</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+        </section>
+
+        <section id="regaleria">
+            <h3>Galer&iacute;a</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minima et id dolores quam suscipit non similique unde vel voluptates exercitationem reiciendis nobis dolorem fugit error sed quibusdam delectus quidem?</p>
+        </section>
+    </main>
+</body>
+</html>
