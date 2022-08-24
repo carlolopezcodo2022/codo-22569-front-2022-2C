@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+/*
+esto es un comentario
+esto es un otro comentario
+*/
+
+/*
+selectorHTML {
+    atributo:valor;
+}
+*/
+
+/*todos los h1 del documento*/
+/*selector por tipo(etiqueta)*/
+h1 {
+    color:blue;
+}
+h2 {
+    color:rgb(100,50,10);
+    font-size: 45px;
+}
+p {
+    color: #000;
+}
+
+/*selector por ID*/
+#parrafoAzul {
+    color:blue;
+    font-family: 'Silkscreen', cursive;
+}
+
+/*selector por clase*/
+.claseParrafoAzul {
+    color:cadetblue
+}
+
+.caja {
+    background-color: aqua;
+    /* height: 100px; */
+    font-size: 16px;
+}
+
+.caja p {
+    color:black
+}
+
+.textoItatic {
+    font-style: italic;
+}
+
+.textoBold {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*fuente externa*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*colores*/
+/*RGB(red,green, blue)*/
+/*RGB(0,0,0)*/
+/*RGB(100,50,10)*/
+/*RGB(255,255,255)*/
+
+p.color {
+    color: #12bc12;
+}
+
+/*rgb + alpha (0 - 1)*/
+p.colorAlpha {
+    font-size: 30px;
+    color:rgb(5,175,200,1);
+}
