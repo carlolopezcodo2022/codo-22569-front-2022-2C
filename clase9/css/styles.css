@@ -1,0 +1,60 @@
+/*agrego en la primer linea las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/*todo en sitio usa google-font*/
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   background-color: beige; 
+}
+
+/*
+    creo una clase: 
+*/
+.menu-container {
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+    height: 30px;
+}
+
+.menu-container li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.menu-container li a {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    /* border: 1px solid blue; */
+    color:white;
+}
+
+/*
+    :hover
+    pseudoclases: cuando paso el mouse sobre "algo"
+*/
+.menu-container li a:hover {
+    color: blueviolet;
+    /* background-color: white; */
+    /*redondear el borde*/
+    /* border-radius: 15px; */
+    font-weight: bolder;
+}
+
+.menu-container li a.active {
+    font-size: 1.2em;
+    color:chocolate;
+}
+
+/*section de main*/
+h1 {
+    text-align: center;
+    color:aqua;
+    margin: 15px;
+}
