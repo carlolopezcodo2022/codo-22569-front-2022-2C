@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cajaContainer {
+            width: 250px;
+            height: 200px;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid red;
+            box-sizing: border-box;
+        }  
+        /*100% > 4 partes*/
+    
+        .uno {
+            background-color: red;
+        }
+        .dos {
+            background-color: orange;
+        }
+        .tres {
+            background-color: yellow;
+        }
+        .cuatro {
+            background-color: blueviolet;
+            display: inline-block;
+        }        
+        .cajaItem {
+            display: inline-block;
+            width: 18%;
+            height: 170px;
+            margin: 5px;
+        }
+
+        .cajaSola {
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .cajaSola div {            
+            width: 49%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="medidas.html">Medidas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod vel quidem placeat exercitationem, libero dolorum tempore, alias delectus rerum iure atque distinctio blanditiis aperiam mollitia minus labore impedit praesentium?</p>
+            <div class="cajaContainer">
+                <div class="cajaItem uno">
+                    uno
+                </div>
+                <div class="cajaItem dos">
+                    dos
+                </div>
+                <div class="cajaItem tres">
+                    tres
+                </div>
+                <div class="cajaItem cuatro">
+                    cuatro
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cajaSola">
+                <div>
+                    uno
+                </div>
+                <div>
+                    dos
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

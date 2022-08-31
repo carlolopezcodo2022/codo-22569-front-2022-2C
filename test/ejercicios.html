@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .felx-container {
+            display: flex;
+            background-color: antiquewhite;
+            width: 500px;
+            padding:10px;
+            margin: 5px;
+            border: 1px solid black;
+            flex-direction: row; /*|column|row-reverse|column-reverse*/
+            flex-wrap: wrap /*|nowrap*/;
+
+            /*alinear items: centra los elementos dentro de un contenedor*/
+            justify-content: space-between  /*flex-start|flex-end|center|space-between|space-arround|space-evenly */;
+
+            /*si el tiene un height, podemos usar:*/
+            height: 400px;
+            align-items: stretch;/*stretch (estira los item al tamaño del contenedor))|flex-start|flex-end|baseline (textos alienados)*/;
+        }
+
+        .felx-container div {
+            background-color: cadetblue;
+            width: 100px;
+            margin: 5px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--flexbox-->
+    <!--direccion en row-->
+    <div class="felx-container">
+        <div style="font-size: 100px;">1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
