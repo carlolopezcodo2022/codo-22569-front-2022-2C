@@ -1,0 +1,7 @@
+- crear un menu con sticky.
+
+- crear smooth scrolling con tres secciones.
+
+- aplicar flexbox 
+
+- aplicar media query
