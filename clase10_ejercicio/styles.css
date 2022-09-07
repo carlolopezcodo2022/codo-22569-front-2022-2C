@@ -69,7 +69,7 @@ section div a:active {
 }
 
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1000px){
