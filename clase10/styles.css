@@ -24,7 +24,7 @@
     background-color: aqua;
 }
 
-/*media query: me sirve para cambiar los estilos cuando cambia la resolucion*/
+/*media query: me sirve para cambiar los estilos cuando cambia la resolucion
 @media screen and (max-width:600px) {
     .container-flex {
         flex-direction: column;
@@ -35,6 +35,7 @@
         color:blue
     }
 }
+*/
 
 section {
     height: 650px;
@@ -43,6 +44,7 @@ section {
     display: flex;
     padding: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 section img {
@@ -79,4 +81,82 @@ section:first-child {
 /*html:*/
 html {
     scroll-behavior: smooth;
+}
+
+
+table tr:nth-child(even ) {
+    background-color: red;
+}
+
+/*menu*/
+.menu-container {
+    background-color: #a18cd1;
+    display: flex;
+    padding: 10px;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    height: 50px;
+
+    position: sticky;
+    top:0;
+    /*si quieren fijo
+    position: fixed;
+    width: 100%;
+    */
+}
+
+.menu-container ul li {
+    display: inline-block;
+}
+
+.menu-container a {
+    /* display: inline-block; */
+    /* height: 50px; */
+    text-decoration: none;
+}
+
+.menu-container a:hover {
+    font-size: 1.2em;
+    color: white
+}
+
+header img {
+    display: block;/*espacio fantasma: elimina linea en blanco*/
+    height: 650px;
+    width: 100%;
+}
+
+/*#portada img {
+    width: 100%;
+}*/
+
+.content-text a {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    /* border: 1px solid #c0e6f8; */
+    border-radius: 20px;
+    line-height: 45px;
+    background: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}
+
+.content-text a:hover {
+    border: 1px solid blue;
+}
+@media screen and (max-width:1000px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        width: 35%;
+    }
+    .content-text {
+        text-align: center;
+    }
 }
