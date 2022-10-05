@@ -16,24 +16,28 @@ addPalabra = function() {
 const arrayDePalabras = [];
 
 function addPalabra() {
-    //capturo el valor del input
-    /*const inputPalabra = document.getElementById('palabra');
-    console.log(inputPalabra);*/
     
     const valuePalabra = document.getElementById('palabra').value;
-    console.log(valuePalabra);
 
-    //validacion: que no sea vacio!
-    if(valuePalabra === '') {
+    const isValid = validar(valuePalabra);
+
+    if(!isValid) {
         alert('Debe completar la palabra');
         return;
     }
 
-    //agrego la palabra al array
-    arrayDePalabras.push(valuePalabra);
-    //console.log(arrayDePalabras);
+    agregar(valuePalabra);
 
     listarPalabras();
+    //listarPalabrasHTML();
+}
+
+function agregar(palabra) {
+    arrayDePalabras.push(palabra);    
+}
+
+function validar(valuePalabra) {
+    return valuePalabra !== '';
 }
 
 function listarPalabras() {
@@ -65,4 +69,18 @@ function listarPalabras() {
     //document.getElementById('listado').innerHTML += ul;
     document.getElementById('listado').appendChild(ul);
     //arrayDePalabras.forEach(x => );
+}
+
+function listarPalabrasHTML() {
+    //valido que no sea vacio el array
+    if(arrayDePalabras.length === 0) {
+        return;
+    }
+
+    document.getElementById('listado').innerHTML = '';
+    for(let unaPalabra of arrayDePalabras) {
+        document.getElementById('listado').innerHTML += unaPalabra;
+    }
+
+    //document.getElementById('listado').innerHTML += ul;
 }
