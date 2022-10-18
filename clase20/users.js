@@ -1,5 +1,5 @@
 function Users(userJson) {
-    console.log(userJson);
+    // console.log(userJson);
 
     const html = `
         <table class="table">
