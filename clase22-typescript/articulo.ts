@@ -1,3 +1,6 @@
+//INSTALADO NODEJS viene con npm
+//npm install -g typescript
+
 //tipo fuerte
 let edad:number = 10;
 //edad = 'hola soy carlios';
